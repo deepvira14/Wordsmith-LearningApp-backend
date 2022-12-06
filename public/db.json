@@ -1,0 +1,143 @@
+{"words": [
+  {
+  "id":1,
+  "question": "Ravage",
+  "answer" : 0,
+  "option" : [
+		"To Devastate",
+		"To acquire",
+		"To hurt someone unintentionally"
+	],
+  "hint" : "Fears that a war could ravage their country",
+	"selected": null
+
+},
+  {
+  "id":2,
+  "question": "Ostracize",
+  "answer" : 2,
+  "option" : [
+    "Being obstacle for someone",
+		"To influence",
+		"Exclude from a society or group."
+		
+	],
+  "hint" : "A group of people were ostracized, and persecuted for centuries",
+	"selected": null
+
+},
+{
+  "id":3,
+  "question": "Ravenous",
+  "answer" : 1,
+  "option" : [
+    "Self Dependent",
+		"Voracious",
+		"A ray of hope"
+		
+	],
+  "hint" : "I'd been out all day and was ravenous",
+	"selected": null
+
+},
+{
+  "id":4,
+  "question": "Subdue",
+  "answer" : 1,
+  "option" : [
+    "To become Happy",
+		"Vanquish",
+		"Thinking Positive"
+		
+	],
+  "hint" : "He managed to subdue an instinct to applaud",
+	"selected": null
+
+},
+{
+  "id":5,
+  "question": "Spry",
+  "answer" : 0,
+  "option" : [
+    "Active",
+		"Looking for Opportunities",
+		"Manifesting"
+		
+	],
+  "hint" : "He continued to look spry into his eighties",
+	"selected": null
+
+},
+{
+  "id":6,
+  "question": "Protege",
+  "answer" : 0,
+  "option" : [
+    "A person who is guided and supported by experienced person",
+		"Looking for Guidance",
+		"Influential person."
+		
+	],
+  "hint" : "Lake, a Trump protege, accuses elections officials of slow-rolling returns",
+	"selected": null
+
+},
+{
+  "id":7,
+  "question": "Precipitate",
+  "answer" : 1,
+  "option" : [
+    "A maintain distance",
+		"To cause",
+		"To perform well"
+		
+	],
+  "hint" : "The incident precipitated a political crisis",
+	"selected": null
+
+},
+{
+  "id":8,
+  "question": "Fervid",
+  "answer" : 2,
+  "option" : [
+    "A lazy person",
+		"To accelerate",
+		"Passionate"
+		
+	],
+  "hint" : "A letter of fervid thanks",
+	"selected": null
+
+},
+{
+  "id":9,
+  "question": "Caseous",
+  "answer" : 0,
+  "option" : [
+    "Cheeselike",
+		"To be alert",
+		"Good Minded"
+		
+	],
+  "hint" : "Surgical intervention was performed to excise the caseous lesions",
+	"selected": null
+
+},
+{
+  "id":10,
+  "question": "Acrophobia",
+  "answer" : 0,
+  "option" : [
+    "Having Danger",
+		"To be calm",
+		"Fear of heights."
+		
+	],
+  "hint" : "Because I have acrophobia, I never ride anything other than the Ferris wheel at the amusement park",
+	"selected": null
+
+}
+
+
+]}

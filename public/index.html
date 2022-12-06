@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index2</title>
+    <!-- <link rel="stylesheet" href="style2.css"> -->
+    <style>
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+:root {
+    --primary : #8c38ff;
+    --light : #eeeeee;
+    --dark : #212121;
+    --main-radius : 5px;
+    --main-padding : 5px;
+   }
+
+body {
+	background-color: #eee;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+.header{
+    border-bottom: 1px solid #000000;
+}
+
+.navbar {
+	background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+nav h1 {
+    color: var(--primary);
+	letter-spacing: 5px;
+	padding: 0.5rem 1rem;
+	padding-right: calc(1rem - 5px);
+	border: 3px solid white;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--primary);
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 5rem;
+}
+
+.nav-link{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.nav-link:hover{
+    color: var(--primary);
+}
+
+
+@media (min-width: 500px) {
+	.mobile-menu, .hamburger {
+		display: none;
+	}
+
+	.menu {
+		display: flex;
+	}
+}
+
+   .container{
+    font-family: 'Noto-Serif',serif;
+    font-weight: 800;
+    font-size: 1em;
+    color: var(--white);
+    display: grid;
+    grid-template-rows:  1.3fr 0.6fr 0.8fr 0.2fr 0.8fr 0.2fr 0.8fr 0.2fr 0.8fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    
+    "main main main main"
+    "about-me about-me about-me-text about-me-text"
+    "achievementsBlock achievementsBlock achievementsBlockDetails achievementsBlockDetails"
+    "academics academics academics academics"
+    "academics-card academics-card academics-card academics-card"
+    "experience experience experience experience"
+    "exp1 exp1 exp2 exp2"
+    "projects-banner projects-banner projects-banner projects-banner"
+    "project project project project"
+    "footer footer footer footer"
+   ;
+   }
+   footer{
+    
+    color: white;
+    display: flex;
+    grid-area: footer;
+
+}
+footer div {
+    text-align: center;
+}
+
+footer div h3{
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.col3{
+    color: var(--darkgrey2);
+    margin: 30px 40px;;
+}
+
+.col3 a {
+    font-size: 1.3em;
+    color: var(--lggrey);
+}
+.col1 {
+    margin: 30px 40px;
+    color: var(--darkgrey2);
+}
+
+.col1 a{
+    display: block;
+    line-height: 25pt;
+    font-size: 1.3em;
+    color: var(--lggrey);
+   
+}
+footer a:hover {
+    color: var(--paper);
+}
+
+#col2 {
+    flex-grow: 2;
+    margin: 30px 40px;
+    color: var(--darkgrey2);
+}
+
+.buttonIn {
+    padding: 0 auto;
+    position: relative;
+}
+
+#col2 input {
+    margin: 0px;
+    padding: 0px;
+    width: 50%;
+    outline: none;
+    height: 30px;
+    border-radius: 5px;
+}
+ 
+#col2 > button {
+    position: relative;
+    top: 0;
+    border-radius: 5px;
+    right: 0px;
+    z-index: 2;
+    border: none;
+    top: 1px;
+    height: 30px;
+    cursor: pointer;
+    color: white;
+    background-color: var(--darkgrey);
+}
+
+
+   #project {
+
+    text-align: center;
+    background-color: #fff;
+    padding: 40px 40px;
+    grid-area: project;
+
+}
+
+#project button {
+
+    padding: 15px;
+    background-color: transparent;
+    border-color: #187bcd !important;
+
+    border-radius: 10px;
+}
+
+#project button:hover {
+    background-color: #187bcd;
+}
+
+#project h2 {
+    padding-top: 20px;
+    font-size: 45px;
+}
+
+#project .card {
+    width: 40%;
+    padding: 20px ;
+    display: inline-block;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #f9f9f8;
+   
+
+}
+
+
+#project .card img {
+    height: 100%;
+    width: 100%;
+}
+#project .card button {
+    color: #000;
+}
+#project .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+#project .card-body h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding: 16px 2px;
+}
+
+#project .card-body p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+   #projects-banner h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 5rem;
+  }
+   #projects-banner {
+    background: #000;
+    grid-area: projects-banner;
+   }
+
+   /* ---------------------- */
+   .box{
+    margin: 0px auto;
+    color: black;
+	width: 400px;
+	height: 500px;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25),
+				0 6px 20px 0 rgba(0,0,0,0.2);
+    }
+
+    .box-title{
+        width: 100%;
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .box-header{
+        height: 400px;
+        line-height: 400px;
+        text-align: center;
+        background-color: var(--primary);
+    }
+    .box-header h1{
+        font-size: 30px;
+        color: white;
+    }
+    .box-footer{
+        text-align: center;
+        height: 100px;
+        line-height: 100px;
+        font-weight: 600;
+    }
+   .exp1{
+    grid-area: exp1;
+    background-color: var(--light);
+    padding: 20px 40px;
+    margin: 40px 0 ;
+   }
+   .exp2{
+    grid-area: exp2;
+    background-color: var(--light);
+    padding: 20px 40px;
+    margin: 40px 0 ;
+
+   }
+
+   #experience {
+    background: #000;
+    grid-area: experience;
+  }
+
+   .card-body p{
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+   }
+   .card-body h3{
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 400;
+    line-height: 30pt;
+    margin-bottom: 50px;
+    color: #000;
+   }
+
+   .card{
+    padding: 40px 40px;
+    width: 30%;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #fbfbfb;
+    margin: 10px;
+   }
+
+   .academics-card{
+    padding: 16px 32px;
+    background: var(--light);
+    display: flex;
+    justify-content: space-evenly;
+    grid-area: academics-card;
+   }
+
+  #academics {
+    background: #000;
+    grid-area: academics;
+  }
+
+   #experience h2{
+
+    padding: 20px;
+    text-align: center;
+    font-size: 4.5rem;
+  }
+  #academics h2{
+    padding: 20px;
+    text-align: center;
+    font-size: 5rem;
+  }
+
+  
+
+   main {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("https://github.com/deepvira14/Wordsmith-LearningApp-images/blob/main/hero2.png?raw=true");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    padding: var(--main-padding);
+    grid-area: main;
+   }
+   .hero-text{
+    font-family: Helvetica;
+    color: white;
+    text-align: center;
+}
+.hero-text h1{
+    font-size: 5rem;
+    font-weight: 700;
+}
+.hero-text p{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 50px;
+    opacity: 70%;
+}
+.hero-btn{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    line-height: 50px;
+    padding: 10px 30px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+/* ------------------------------ */
+#about-me {
+    background: var(--paper);
+    grid-area: about-me;
+}
+#about-me img{
+    /* padding-top: 40px; */
+    width: 500px;
+    display: block;
+    /* margin: 0 auto; */
+
+}
+
+#about-me-text {
+    background: var(--alter);
+    color: #000;
+    grid-area: about-me-text;
+
+
+}
+#about-me-text h1 {
+    font-size: 4em;
+    margin: 10px 10px;
+}
+#about-me-text p {
+    margin: 20px 20px;
+    line-height: 30pt;
+    font-size: 1.4em;
+    font-weight: 400;
+    word-wrap: normal;
+}
+
+#achievements{
+
+    padding-top: 80px;
+    line-height: 30pt;
+    font-size: 1.4em;
+    word-wrap: normal;
+    grid-area: achievementsBlock;
+}
+#achievements h2{
+    font-size: 4em;
+    padding: 16px 32px;
+    color: #000;
+    margin: 10px 10px;
+}
+.achievements-details{
+    padding: var(--main-padding);
+    grid-area: achievementsBlockDetails;
+}
+.achievements-details img {
+    width: 600px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+.achievements-details .achive-list li{
+    color: #000;
+    margin: 20px 20px;
+}
+.achive-list {
+    margin-left: 10%;
+    line-height: 40pt;
+    padding: 30px 20px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+ul {
+    color: #000;
+}
+
+/* --------------------------- */
+
+   #sidebar {
+    background: #a2a2d0;
+    padding: var(--main-padding);
+    grid-area: sidebar;
+   }
+   #content1 {
+    background: var(--yellowish);
+    padding: var(--main-radius);
+
+    grid-area: content1;
+   }
+
+   #content1 .card {
+    padding: auto;
+    width: 80%;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #fbfbfb;
+    margin: 10px;
+}
+   
+#content2 .card {
+    padding: auto;
+    width: 80%;
+    height: 100px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    background-color: #fbfbfb;
+    margin: 10px;
+}
+
+   #content2 {
+    background: var(--yellowish);
+    padding: var(--main-radius);
+    grid-area: content2;
+   }
+   #content3 {
+    background: var(--yellowish);
+    padding: var(--main-radius);
+    grid-area: content3;
+   }
+   footer{
+    background: var(--primary);
+    padding: var(--main-padding);
+    grid-area: footer;
+   }
+
+
+   @media only screen and (max-width: 500px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 0.5fr 0.4fr 0.3fr 0.4fr 0.1fr 0.6fr 0.1fr 0.4fr 0.4fr 0.1fr 1.5fr 0.65fr; 
+        grid-template-areas: 
+        
+        "main"
+        "about-me"
+        "about-me-text"
+        "achievementsBlock"
+        "achievementsBlockDetails"
+        "academics"
+        "academics-card"
+        "experience"
+        "exp1"
+        "exp2"
+        "projects-banner"
+        "project"
+        "footer"
+        
+        ;
+    }
+    /* ---------------------- */
+    #col2 {
+        flex-grow: 2;
+        margin: 20px;
+        color: var(--darkgrey2);
+    }
+    
+    .buttonIn {
+        padding: 0 auto;
+        position: relative;
+    }
+    
+    #col2 input {
+        margin: 0px;
+        padding: 0px;
+        width: 50%;
+        outline: none;
+        /* height: 30px; */
+        border-radius: 5px;
+    }
+
+    .col3{
+        margin: 0;
+    }
+    
+    .col3 a {
+        font-size: 1em;
+        color: var(--lggrey);
+    }
+    .col1 a{
+        font-size: 1em;
+    }
+    .col1{
+        margin: 0;
+    }
+
+    footer{
+    
+        /* background: #000; */
+        color: white;
+        flex-direction: column;
+    
+    }
+    footer div {
+        text-align: center;
+    }
+    
+    footer div h3{
+        margin-bottom: 10px;
+        font-size: 2em;
+        font-weight: 600;
+    }
+
+    #project {
+        
+        text-align: center;
+        background-color: #fff;
+        padding: 10px 20px;
+    }
+    
+    #project button {
+    
+        padding: 15px;
+        background-color: transparent;
+        border-color: #187bcd !important;
+    
+        border-radius: 10px;
+    }
+    
+    /* #project button:hover {
+        background-color: #187bcd;
+    } */
+    
+    #project h2 {
+        /* padding-top: 10px; */
+        font-size: 1.5em;
+    }
+    
+    #project .card {
+        width: 90%;
+        padding: 20px 20px ;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: none;
+        background-color: #f9f9f8;
+    }
+    
+    
+    #project .card button {
+        color: #000;
+    }
+    
+    #project .card-body h3{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    #project .card-body p{
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    
+       #projects-banner h2{
+        padding: 20px;
+        text-align: center;
+        font-size: 5rem;
+      }
+       
+    /* -------------------------- */
+    #projects-banner h2{
+        text-align: center;
+        font-size: 2.5rem;
+      }
+       #projects-banner {
+        background: #000;
+       }
+
+    .box{
+        margin: 10px auto;
+        color: black;
+        width: 300px;
+        height: 400px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.25),
+                    0 6px 20px 0 rgba(0,0,0,0.2);
+        }
+       
+    
+        .box-title{
+            width: 100%;
+            font-size: 45px;
+            text-align: center;
+        }
+    
+        .box-header{
+            height: 350px;
+            line-height: 400px;
+            text-align: center;
+            background-color: var(--primary);
+        }
+        .box-header h1{
+            font-size: 30px;
+            color: white;
+        }
+        .box-footer{
+            text-align: center;
+            height: 100px;
+            line-height: 30px;
+            font-weight: 600;
+        }
+        .box-footer p{
+            /* margin-top: 20px; */
+            font-size: 14px;
+        }
+
+
+    .exp1{
+        background-color: var(--light);
+        padding: 20px 20px;
+        margin: 10px ;
+       }
+       .exp2{
+        background-color: var(--light);
+        padding: 0px 20px;
+        margin: 10px;
+    
+       }
+
+    #experience {
+        background: #000;
+      }
+       #experience h2{
+    
+        padding: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+      }
+
+   .card-body p{
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 500;
+    color: #000;
+   }
+   .card-body h3{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 30pt;
+    margin-bottom: 50px;
+    color: #000;
+   }
+
+   .card{
+    padding: 30px 30px;
+    width: 100%;
+    border-radius: 15px;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    /* transition: 0.3s; */
+    background-color: #fbfbfb;
+    margin: 20px;
+   }
+
+   .academics-card{
+    /* padding: 16px 32px; */
+    /* height: 60vh; */
+    align-items: center;
+    background: var(--light);
+    flex-direction: column;
+   }
+
+  #academics {
+    background: #000;
+  }
+  #academics h2{
+    font-size: 2em;
+
+  }
+
+
+    #achievements{
+        padding: 10px;
+        line-height: 10pt;
+        font-size: 1em;
+        word-wrap: normal;
+    }
+    #achievements h2{
+        text-align: center;
+        font-size: 2.5em;
+        padding: 0;
+        /* margin-top: 50px; */
+        color: #000;
+    
+        margin: 10px 10px;
+    }
+   
+    .achievements-details{
+        padding: 0;
+      
+    }
+    .achievements-details img {
+        width: 300px;
+        
+        margin: 0 auto;
+    }
+    .achievements-details .achive-list li{
+        color: #000;
+        margin: 0;
+       
+    }
+    .achive-list {
+        margin-left: 10%;
+        line-height: 20pt;
+        padding: 30px 20px;
+        font-size: 1em;
+        font-weight: 400;
+    }
+
+   
+    
+    #about-me img{
+        width: 300px;
+        display: block;
+        margin: 0 auto;
+    
+    }
+    
+    #about-me-text {
+        text-align: center;
+        background: var(--alter);
+        color: #000;
+    
+    
+    }
+    #about-me-text h1 {
+        font-size: 2.5em;
+    }
+    #about-me-text p {
+        margin: 20px 20px;
+        line-height: 15pt;
+        font-size: 1em;
+        font-weight: 400;
+        word-wrap: normal;
+    }
+
+    .hero-text h1{
+        color: white;
+        /* margin-top: 50px; */
+        margin-top: -100px;
+        font-size: 45px;
+        font-weight: 600;
+        opacity: 80%;
+    }
+    .hero-text p{
+        font-size: 23px;
+        color: #f9f9f8;
+        font-weight: 500;
+        line-height: 20px;
+        opacity: 80%;
+
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+    .nav-link{
+        font-size: 1.4rem;
+        font-weight: 400;
+        color: var(--primary);
+    }
+    
+
+    .nav-item {
+        margin: 2.5rem 0;
+        color: #000000;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+	.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+   
+
+
+    }
+
+    
+   
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+		<nav class="navbar">
+			<h1>DV</h1>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#academics" class="nav-link">Academics</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experiences</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects-banner" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#clear" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+	</header>
+ <!-- -------------------------------------- ssss-->
+
+      <div class="container">
+        
+        <main>
+            <div class="hero-text">
+                <h1>Hi I'm Deep Vira</h1>
+                <p>And, I'm a full-snack developer</p>
+            </div>
+        </main>
+
+        <!-- -------------------------------------- -->
+        <div id="about-me">
+            <img src="https://raw.githubusercontent.com/deepvira14/Wordsmith-LearningApp-images/dd0e33332aec7eead6cd2b9ea85b1192dd9e8569/me.svg"  alt="">
+        </div>
+
+        <div id="about-me-text">
+            <h1>About Myself</h1>
+            <p>
+                An inquisitive learner with a zeal to experiment with new ideas and technologies.
+                Also, an analytical thinker with an experience of 2+ years in developing ideas, business insights and operational management. Proficient in frontend development, user interface design, and expertise in technologies such as the MERN stack, as well as the ability to work cross-organizationally to drive continuous quality assurance.
+            </p>
+        </div>
+
+
+        <!-- ----------------------------------------------- -->
+        <div id="achievements">
+            <h2>Skills</h2>
+            
+            <ul class="achive-list">
+                <li>1. &nbsp;Languages - C++, Javascript, Java, Python</li>
+                <li>2. &nbsp;Libraries - React, Node, Express, Material-UI </li>
+                <li> 3. &nbsp;Tools - Flutter, Redux</li>
+                <li> 4. &nbsp;Design Tools - Canva, Adobe XD, Final Cut Pro</li>
+            </ul>
+        </div>
+        <div class="achievements-details">
+            <img class="ach-img"src="https://raw.githubusercontent.com/deepvira14/Wordsmith-LearningApp-images/dd0e33332aec7eead6cd2b9ea85b1192dd9e8569/award.svg" alt="">
+        </div>
+
+        <!-- ------------------------------------------------------- -->
+        <div id="academics">
+             <h2>Academics</h2>
+        </div>
+        <div class="academics-card">
+            <div class="card">
+                <div class="card-body">
+                    <h3>University of New Haven</h3>
+                    <p>Master's in Computer Science | 3.73/4.0
+                        
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h3>Mumbai University</h3>
+                    <p>Bachelor's in Computer Science | 6.8/10.0
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------------------------------------------- -->
+        <div id="experience">
+            <h2>Experiences</h2>
+       </div>
+       <div class="exp1">
+        <div class="box">
+        
+            <div class="box-body"> 
+               <div class="box-header">
+                   <h1>Software Developer</h1>
+               </div>
+               <div class="box-footer">
+                  <p>Spectramed | November 2020 - May 2021 </p>
+               </div>
+               
+           </div>
+          
+             
+          </div>
+       </div>
+       <div class="exp2">
+        <div class="box">
+        
+            <div class="box-body"> 
+               <div class="box-header">
+                   <h1>Ambassador</h1>
+               </div>
+               <div class="box-footer">
+                  <p>Nibodh Eduacare | April 2019 - June 2020 </p>
+               </div>
+               
+           </div>
+          
+             
+          </div>
+       </div>
+
+        <!-- ------------------------------------------------------- -->
+        <div id="projects-banner">
+            <h2>Projects</h2>
+       </div>
+       <div id="project">
+        <div class="card">
+            <img src="https://github.com/deepvira14/Wordsmith-LearningApp-images/blob/main/hero1.png?raw=true">
+            <div class="card-body">
+                <h3>Everything on Sale</h3>
+                <p>Built a e-coomerece website which can be used to sell any desired products. Also an inventory management at backend. </p>
+                <a href="#"><button>Demo</button></a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://github.com/deepvira14/Wordsmith-LearningApp-images/blob/main/hero1.png?raw=true">
+            <div class="card-body">
+                <h3>Stock Proce Tacking</h3>
+                <p>  Reactjs based wesbsite to track fluctuating prices and dispalying values using react visualisations.</p>
+                <a href="#"><button>Demo</button></a>
+            </div>
+        </div>
+       </div>
+<!-- ---------------------------------------- -->
+
+       <footer>
+        <div class="col3">
+            <h3>CONTACT</h3>
+           <a href="http://gmail.com"> depvira45@gmail.com</a>
+        </div>
+
+        <div id="col2">
+            <h3>NEWSLETTER</h3>
+            <b>Submit your email </b>
+            <br><br>
+            <div class="buttonIn">
+                <input type="email" id="enter">
+                <button id="clear">Submit</button>
+            </div>
+        </div>
+
+        <div class="col1">
+            <h3>USEFUL LINKS</h3>
+            <a href="#">Home</a>
+            <a href="#academics">Academics</a>
+            <a href="#experience">Experiences</a>
+            <a href="#projects-banner">Projects</a>
+            
+        </div>
+    </footer>
+<!-- ---------------------------------------- -->
+       
+     
+
+      </div>
+      
+</body>
+<script>
+    window.addEventListener('load', () => {
+            const button = document.querySelector('#clear');
+            button.addEventListener('click', () => {
+                document.querySelector('#enter').value = "";
+            });
+        });
+
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+    const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+
+    
+}
+</script>
+</html>
